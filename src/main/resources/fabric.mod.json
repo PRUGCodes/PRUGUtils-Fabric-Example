@@ -31,7 +31,7 @@
     "fabricloader": ">=0.7.4",
     "fabric": "*",
     "minecraft": "1.16.x",
-    "prugutils": "*"
+    "prugutils": "0.1.0"
   },
   "suggests": {
     "another-mod": "*"

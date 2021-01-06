@@ -10,6 +10,16 @@ archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
+repositories {
+    maven {
+        url 'https://repo.repsy.io/mvn/hmorin/prugutils/'
+    }
+}
+
+
+
+//https://github.com/PRUGCodes/PRUGUtilsDependsRepository/blob/main/
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -19,7 +29,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modCompile "net.prug.prugutils:prug-utils:0.1.0"
+	modImplementation "net.prugcodes.prugutils-fabric:PRUGUtils-Fabric:0.1.0"
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.

@@ -12,8 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.explosion.Explosion.DestructionType;
-import net.prug.prugutils.main.ConfigurableDrinkableEffectType;
-import net.prug.prugutils.main.ConfigurableExplosiveBlock;
+import net.prug.prugutils.main.*;
 
 public class PrugUtilExample implements ModInitializer {
 
